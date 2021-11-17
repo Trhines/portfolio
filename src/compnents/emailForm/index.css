@@ -1,0 +1,25 @@
+.modal-open{
+    padding-right: 0px !important;
+}
+
+.modal-content{
+    background-color: var(--bg) !important;
+    border-color: inherit;
+    color:inherit;
+    border-radius: 0px;
+}
+
+.custom-inputgroup{
+    border-radius: 0px;
+    background-color: inherit;
+    border-color: var(--navclr);
+    color: var(--text)
+}
+
+.form-control:focus {
+    color: var(--text);
+    background-color: inherit;
+    border-color: var(--bg);
+    outline: 0;
+    box-shadow: none;
+}

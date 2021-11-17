@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: none;
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footContainer{
+    position: fixed;
+    display:flex;
+    margin: none !important;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+li{
+    padding: 8px, 16px;
+}
+

@@ -1,0 +1,33 @@
+.jumbotron{
+    margin-top: 3rem;
+    color: var(--text);
+    display:flex;
+    justify-content: center;
+}
+
+.btn-primary{
+    margin-right: .5rem;
+    color: var(--bg);
+    background-color: var(--highlight);
+    border: 1px solid var(--highlight);
+    width:49%;
+}
+
+.btn-primary:hover{
+    color: var(--highlight) !important;
+    background-color: var(--bg);
+    border-color: var(--offGold)
+}
+
+.btn-primary:focus{
+    color: var(--highlight) !important;
+    background-color: var(--bg);
+    border-color: var(--highlight);
+    box-shadow: none !important;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}

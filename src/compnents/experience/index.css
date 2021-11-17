@@ -1,0 +1,12 @@
+.row{
+    color: var(--text)
+}
+
+.card-title{
+    color: var(--highlight);
+}
+
+.justifyCenter{
+    /* display: flex; */
+    /* justify-content: center; */
+}

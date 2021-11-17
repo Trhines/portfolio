@@ -1,0 +1,58 @@
+.linkContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    color: var(--text);
+    margin: 2rem;
+    border-radius: 0%;
+    border: none;
+    background-color: inherit;
+}
+
+.card-img-top{
+    border-radius: 0%;
+    height: 140px;
+}
+
+.visit{
+    color:red;
+    position :absolute;
+    left: 100px;
+    top:70px;
+}
+
+.imgLink:hover{
+    opacity: 75%;
+}
+
+.card-body{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.btn-secondary{
+    color: var(--text);
+    background-color: var(--bg);
+    border-color: var(--offWhite);
+}
+
+.btn-secondary:hover{
+    color: var(--highlight);
+    background-color: var(--bg);
+    border-color: var(--offGold);
+}
+
+.btn-secondary:focus{
+    box-shadow: none !important;
+    border-color: var(--highlight);
+}
