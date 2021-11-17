@@ -17,9 +17,7 @@ const EmailForm = (props) => {
     }
 
     const sendEmail = async (event) => {
-        console.log("hittS")
         const response = await fetch('https:/safe-savannah-86528.herokuapp.com/send', {
-            mode: "no-cors",
             method: 'POST',
             body: emailData,
             headers: { 

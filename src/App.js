@@ -29,11 +29,13 @@ function App() {
   return (
     <div>
     <Router>
-        <Header>
+
+        <Header showModal={handleShow}>
           <Homelink/>
           <MyWorklink workRef={workNavRef}/>
           <Experiencelink/>
         </Header>
+
         <Container>
           <EmailForm showStatus={show} closeModal={handleClose}/>
             <Route exact path="/">
@@ -46,6 +48,7 @@ function App() {
               <Experience/>
             </Route>
         </Container>
+
     </Router>
     </div>
   );
