@@ -17,7 +17,7 @@ const EmailForm = (props) => {
     }
 
     const sendEmail = async (event) => {
-        const response = await fetch('http://localhost3001/send', {
+        const response = await fetch('https://safe-savannah-86528.herokuapp.com/send', {
             method: 'POST',
             body: emailData,
             headers: { 
