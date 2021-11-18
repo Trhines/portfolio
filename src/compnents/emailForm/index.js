@@ -17,14 +17,19 @@ const EmailForm = (props) => {
     }
 
     const sendEmail = async (event) => {
-        const response = await fetch('https:/safe-savannah-86528.herokuapp.com/send', {
+        const response = await fetch('http://localhost3001/send', {
             method: 'POST',
             body: emailData,
             headers: { 
                 'Content-Type': 'application/json',
             },
           });
+          if(response.ok){
             props.closeModal()
+          }
+            else{
+                console.log(response)
+            }
     }
 
     return (
