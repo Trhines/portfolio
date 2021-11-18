@@ -6,7 +6,6 @@
     color: var(--highlight);
 }
 
-.justifyCenter{
-    /* display: flex; */
-    /* justify-content: center; */
+.no-margin{
+    margin: 0px;
 }

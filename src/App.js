@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
@@ -15,7 +15,7 @@ import MyWork from './compnents/myWork'
 import Experience from './compnents/experience'
 
 
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useRef} from 'react'
 
 
 function App() {

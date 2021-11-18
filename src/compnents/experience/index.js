@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.css'
 import { Container, Row, Col, Card, } from 'react-bootstrap'
-import { useEffect } from 'react'
 
 
 const Experience = (props) => {
@@ -9,7 +8,7 @@ const Experience = (props) => {
         <Container fluid="md">
             <Row>
             <Col xs={12} md={4}>
-                    <Card>
+                    <Card className="no-margin">
                         <Card.Body>
                             <Card.Title>React</Card.Title>
                             <Card.Text>
@@ -20,7 +19,7 @@ const Experience = (props) => {
                     </Card>
                 </Col>
                 <Col xs={12} md={4}>
-                    <Card>
+                    <Card className="no-margin">
                         <Card.Body>
                             <Card.Title>HTML/CSS</Card.Title>
                             <Card.Text>
@@ -33,7 +32,7 @@ const Experience = (props) => {
                     </Card>
                 </Col>
                 <Col xs={12} md={4}>
-                    <Card>
+                    <Card className="no-margin">
                         <Card.Body>
                             <Card.Title>Javascript</Card.Title>
                             <Card.Text>
@@ -45,7 +44,7 @@ const Experience = (props) => {
                     </Card>
                 </Col>
                 <Col xs={12} md={4}>
-                    <Card>
+                    <Card className="no-margin">
                         <Card.Body>
                             <Card.Title>Node.js</Card.Title>
                             <Card.Text>
@@ -56,7 +55,7 @@ const Experience = (props) => {
                     </Card>
                 </Col>
                 <Col xs={12} md={4}>
-                    <Card>
+                    <Card className="no-margin">
                         <Card.Body>
                             <Card.Title>MySQL</Card.Title>
                             <Card.Text>
@@ -68,7 +67,7 @@ const Experience = (props) => {
                     </Card>
                 </Col>
                 <Col xs={12} md={4}>
-                    <Card>
+                    <Card className="no-margin">
                         <Card.Body>
                             <Card.Title>MongoDB</Card.Title>
                             <Card.Text>
@@ -80,7 +79,7 @@ const Experience = (props) => {
                     </Card>
                 </Col>
                 <Col xs={12} md={4}>
-                    <Card>
+                    <Card className="no-margin">
                         <Card.Body>
                             <Card.Title>API</Card.Title>
                             <Card.Text>

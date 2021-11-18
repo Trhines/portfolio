@@ -1,11 +1,11 @@
-import { propTypes } from 'react-bootstrap/esm/Image'
+
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
 
-const Homelink = (props) => {
+const Homelink = () => {
     return(
         <Nav.Item>
-            <Nav.Link ref={props.homeRef} className="nav-link" as={Link} to="/">Home</Nav.Link>
+            <Nav.Link className="nav-link" as={Link} to="/">Home</Nav.Link>
         </Nav.Item>
     )
 }

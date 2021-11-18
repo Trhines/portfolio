@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 
 const AboutMe = (props) => {
-  const setWorkFocus = () => {
-    props.worfRef.current.focus()
-  }
   return (
       <div className="jumbotron">
         <div>

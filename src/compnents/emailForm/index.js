@@ -46,7 +46,7 @@ const EmailForm = (props) => {
                 </Form.Group>
             </Modal.Body>
             <Modal.Footer className="custom-inputgroup">
-                <Button onClick={()=>sendEmail()}>send</Button>
+                <Button onClick={()=>sendEmail()}>Send</Button>
             </Modal.Footer>
             </Form>
         </Modal>

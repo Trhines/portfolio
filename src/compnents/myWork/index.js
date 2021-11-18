@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './index.css'
 
 import Card from 'react-bootstrap/Card'
@@ -9,7 +9,7 @@ import techBlog from '../../images/techBlog.jpg'
 import noteTaker from '../../images/noteTaker.jpg'
 import weatherApp from '../../images/weatherApp.png'
 
-const MyWork = (props) => {
+const MyWork = () => {
     const projects = [
         {img: fitnessTracker, title:"Fitness Tracker", description:"A way to co create workouts and track your fitness progress.", webLink:"https://frozen-brook-08177.herokuapp.com/", github:"https:github.com/Trhines/Fitness-Tracker"},
         {img: techBlog, title:"Tech Blog", description:"A simple blog website where you can create and edit posts and comments.", webLink:"https://techblogwebsite.herokuapp.com/", github:"https://github.com/Trhines/Tech-Blog"},
@@ -18,7 +18,7 @@ const MyWork = (props) => {
         // {img:, title:, description:, webLink:, github:},
     ]
 
-    const [projectState, setState] = useState(projects.map((project)=>{
+    const [projectState] = useState(projects.map((project)=>{
         return(
             <Card key = {project.title} style={{ width: '18rem' }}>
             <a className="imgLink" href={project.webLink}>
