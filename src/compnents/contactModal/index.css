@@ -1,0 +1,15 @@
+.modal-open{
+    padding-right: 0px !important;
+}
+
+.modal-content{
+    background-color: var(--bg) !important;
+    color: var(--text);
+    border-radius: 0px;
+    border: black 0px solid;
+}
+
+.modal-header{
+    border-color: var(--navclr)
+}
+

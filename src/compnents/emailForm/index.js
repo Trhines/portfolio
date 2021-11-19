@@ -17,19 +17,20 @@ const EmailForm = (props) => {
     }
 
     const sendEmail = async (event) => {
-        const response = await fetch('https://safe-savannah-86528.herokuapp.com/send', {
-            method: 'POST',
-            body: emailData,
-            headers: { 
-                'Content-Type': 'application/json',
-            },
-          });
-          if(response.ok){
-            props.closeModal()
-          }
-            else{
-                console.log(response)
-            }
+        // const response = await fetch(, {
+        //     method: 'POST',
+        //     body: emailData,
+        //     headers: { 
+        //         'Content-Type': 'application/json',
+        //     },
+        //   });
+        //   if(response.ok){
+        //     props.closeModal()
+        //   }
+        //     else{
+        //         console.log(response)
+        //     }
+        props.closeModal()
     }
 
     return (
