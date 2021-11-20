@@ -13,3 +13,34 @@
     border-color: var(--navclr)
 }
 
+.modal-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-card{
+    display: block;
+    width: 50%;
+    padding: .5rem;
+    flex-wrap: wrap;
+}
+
+.flex-centered{
+    display:flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.info-style{
+    color: var(--text);
+}
+
+.info-card:hover .info-style{
+    color: var(--highlight)
+}
+
+a{
+    text-decoration: none !important;
+}

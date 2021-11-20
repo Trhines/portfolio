@@ -1,13 +1,13 @@
 import { Tooltip, OverlayTrigger, Nav } from 'react-bootstrap'
 import { useState } from 'react'
 
-import EmailIcon from '../../../../images/emailsvg'
+import EmailIcon from '../../../images/emailsvg'
 
-const EmailLink = (props) => {
+const EmailInfo = (props) => {
 
-    const [tipText, setTipText] = useState("Copy email to clipboard")
+    const [tipText, setTipText] = useState("trhines94@gmail.com")
     const changeTipText = (text) => setTipText(text)
-    const resetTipText = () => setTipText("Cope email to clipboard")
+    const resetTipText = () => setTipText("trhines94@gmail.com")
 
     const [show, showState] = useState(false)
     const showTipHandler = () => showState(!show)
@@ -16,7 +16,7 @@ const EmailLink = (props) => {
 
     const tooltip = (props) => {
         return(
-            <Tooltip className="margin-left" id="resume-tooltip" show={show} {...props}>
+            <Tooltip id="resume-tooltip" show={show} {...props}>
                {tipText}
             </Tooltip>
         )
@@ -40,23 +40,24 @@ const EmailLink = (props) => {
             overlay={tooltip}
             show={show}
         >
-        <Nav.Item
+        <div
             onMouseEnter={()=>{
                 resetTipText()
                 showTipHandler()}
             }
             onMouseLeave={()=>hideTip()} 
             onClick={copyEmail}>
-            <div className="nav-link">
-                <EmailIcon/>
-            </div>
-        </Nav.Item>
+                        <div className="flex-centered info-style">
+                            <EmailIcon/>
+                        </div>
+                        <div className="flex-centered info-style">
+                            <p>Gmail</p>
+                        </div>
+                    </div>
+            
+        
         </OverlayTrigger>
     )
 }
 
-export default EmailLink
-
-
-
-
+export default EmailInfo
