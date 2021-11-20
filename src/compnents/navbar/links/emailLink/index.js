@@ -7,7 +7,7 @@ const EmailLink = (props) => {
 
     const [tipText, setTipText] = useState("Copy email to clipboard")
     const changeTipText = (text) => setTipText(text)
-    const resetTipText = () => setTipText("Cope email to clipboard")
+    const resetTipText = () => setTipText("Copy email to clipboard")
 
     const [show, showState] = useState(false)
     const showTipHandler = () => showState(!show)
