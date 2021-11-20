@@ -1,3 +1,4 @@
+//not currently in use
 import React from "react"
 import { useState } from "react"
 import Modal from "react-bootstrap/Modal"
@@ -17,14 +18,21 @@ const EmailForm = (props) => {
     }
 
     const sendEmail = async (event) => {
-        const response = await fetch('https://safe-savannah-86528.herokuapp.com/send', {
-            method: 'POST',
-            body: emailData,
-            headers: { 
-                'Content-Type': 'application/json',
-            },
-          });
-            props.closeModal()
+
+        // const response = await fetch(, {
+        //     method: 'POST',
+        //     body: emailData,
+        //     headers: { 
+        //         'Content-Type': 'application/json',
+        //     },
+        //   });
+        //   if(response.ok){
+        //     props.closeModal()
+        //   }
+        //     else{
+        //         console.log(response)
+        //     }
+        props.closeModal()
     }
 
     return (

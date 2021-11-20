@@ -26,7 +26,11 @@
 
 .nav-link{
     color: var(--text) !important;
-    Margin-left:1.5rem;
+    margin-left:1.5rem;
+}
+
+.margin-left{
+    margin-left: .75rem;
 }
 
 .nav-link:hover{

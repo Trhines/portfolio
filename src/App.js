@@ -6,43 +6,35 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 
 import Header from './compnents/navbar'
-import Homelink from './compnents/navbar/links/homeLink'
-import MyWorklink from './compnents/navbar/links/myWorkLink'
-import Experiencelink from './compnents/navbar/links/experienceLink'
-import EmailForm from './compnents/emailForm'
 import AboutMe from './compnents/aboutMe'
 import MyWork from './compnents/myWork'
 import Experience from './compnents/experience'
+import ContactModal from './compnents/contactModal';
 
 
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 
 
 function App() {
-  const [show, setShow] = useState(false)
 
-  const handleShow = () => setShow(true)
-  const handleClose = () => setShow(false)
-
-  const workNavRef = useRef()
+  const [contactState, setContactState] = useState(false)
+  const showContactModal = () => {setContactState(true)}
+  const closeContactModal = () => {setContactState(false)}
 
   return (
     <div>
     <Router>
 
-        <Header showModal={handleShow}>
-          <Homelink/>
-          <MyWorklink workRef={workNavRef}/>
-          <Experiencelink/>
+        <Header>
         </Header>
 
         <Container>
-          <EmailForm showStatus={show} closeModal={handleClose}/>
+          <ContactModal modalState={contactState} closeModal={closeContactModal}/>
             <Route exact path="/">
-              <AboutMe showModal={handleShow} workRef={workNavRef}/>
+              <AboutMe showModal={showContactModal} />
             </Route>
             <Route exact path="/myWork">
-              <MyWork workRef={workNavRef}/>
+              <MyWork/>
             </Route>
             <Route exact path="/experience">
               <Experience/>
