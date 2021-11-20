@@ -18,6 +18,7 @@ const EmailForm = (props) => {
     }
 
     const sendEmail = async (event) => {
+
         // const response = await fetch(, {
         //     method: 'POST',
         //     body: emailData,
