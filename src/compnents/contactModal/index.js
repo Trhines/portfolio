@@ -10,7 +10,7 @@ import LinkedInInfo from './linkedinInfo'
 const ContactModal = (props) => {
 
     return (
-        <Modal show={props.modalState} centered>
+        <Modal show={props.modalState} onHide={props.closeModal} centered>
             <Modal.Header>
                 <Modal.Title>My Info</Modal.Title>
                 <CloseButton variant="white" onClick={props.closeModal} />
