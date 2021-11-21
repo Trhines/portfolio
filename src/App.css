@@ -20,6 +20,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	font-family: 'Open Sans', sans-serif;
 } */
+
+html, body{
+	font-family: 'Open Sans', sans-serif;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
