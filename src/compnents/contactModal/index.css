@@ -35,6 +35,7 @@
 
 .info-style{
     color: var(--text);
+    margin-bottom: .25rem;
 }
 
 .info-card:hover .info-style{
